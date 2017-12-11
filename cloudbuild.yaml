@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/Subaru365/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/Subaru365/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "asis.gcr.io/akira-project/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "asia.gcr.io/akira-project/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
   - "asia.gcr.io/akira-project/gcp-cd-codelab:$REVISION_ID"
